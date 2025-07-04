@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日の読書おみくじ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>📜 今日の読書おみくじ</h1>
+        <nav class="site-nav">
+            <a href="index.html">トップ</a>
+            <a href="gacha_cgi.rb?mode=list_all">書籍一覧</a>
+            <a href="gacha_cgi.rb?mode=favorites">お気に入り帳</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <p class="intro">あなたの運命の一冊を占います</p>
+        <form action="gacha_cgi.rb" method="get" class="search-form" accept-charset="UTF-8">
+            <input type="text" name="keyword" class="search-box" placeholder="キーワード、気分、作家名など">
+            <button type="submit" class="search-button">おみくじを引く</button>
+        </form>
+    </main>
+</body>
+</html>
